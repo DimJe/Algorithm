@@ -24,7 +24,8 @@ fun main() = with(System.`in`.bufferedReader()){
     while(!queue.isEmpty()){
         val node = queue.poll()!!
         if(node.x == end[0] && node.y == end[1] && node.direction == end[2]){
-            ans = min(ans,node.count)
+            ans = node.count
+            break
         }
         else{
             for (i in 1..3){
