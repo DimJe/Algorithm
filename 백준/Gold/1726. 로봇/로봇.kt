@@ -11,7 +11,7 @@ fun main() = with(System.`in`.bufferedReader()){
     for (i in 0 until n){
         graph[i] = readln().split(" ").map { it.toInt() }
     }
-    var ans = 100 * 100 * 4
+    var ans = 0
     val nDir = listOf(Pair(0,1),Pair(0,-1),Pair(1,0),Pair(-1,0))
     val turnR = mapOf(0 to 2,1 to 3,2 to 1,3 to 0)
     val turnL = mapOf(0 to 3,1 to 2,2 to 0,3 to 1)
